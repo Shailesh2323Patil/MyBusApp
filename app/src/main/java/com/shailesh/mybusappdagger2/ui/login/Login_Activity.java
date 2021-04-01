@@ -25,6 +25,7 @@ import javax.inject.Inject;
 
 public class Login_Activity extends DaggerAppCompatActivity
 {
+    // First Commit
     private static final String TAG = "Activity_Login";
 
     ActivityLoginBinding binding;
@@ -106,8 +107,5 @@ public class Login_Activity extends DaggerAppCompatActivity
                 }
             }
         });
-
     }
-
-
 }
