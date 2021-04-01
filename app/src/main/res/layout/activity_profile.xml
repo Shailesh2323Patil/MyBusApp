@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="ViewModel"
+            type="com.shailesh.mybusappdagger2.ui.profile.Profile_ViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/id_lay_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/browser_actions_bg_grey">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layTopLogo"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    app:cardBackgroundColor="@color/color_white"
+                    app:cardCornerRadius="@dimen/_4sdp"
+                    app:cardElevation="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/tv_name"
+                            android:text="@string/personal_details"
+                            android:gravity="center|left"
+                            android:textColor="@color/color_text_color"
+                            android:textSize="@dimen/text_head_size_18" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="@dimen/_65sdp"
+                                android:layout_height="@dimen/_65sdp"
+                                android:gravity="center">
+                                <!--android:background="@drawable/shape_card_circle_backround"-->
+
+                                <ImageView
+                                    android:id="@+id/id_img_profile_logo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/icon_profile"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/et_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:hint="@string/name"
+                                    android:text="@={ViewModel.mutableName}"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="@dimen/btn_text_size_15" />
+
+                                <EditText
+                                    android:id="@+id/et_dob"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:clickable="true"
+                                    android:focusable="false"
+                                    android:hint="@string/dob"
+                                    android:inputType="none"
+                                    android:text="@={ViewModel.mutableDOB}"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="@dimen/btn_text_size_15" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:text="Gender"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="@dimen/_12ssp" />
+
+                                <RadioGroup
+                                    android:id="@+id/radioGroup"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_below="@+id/imageView"
+                                    android:orientation="horizontal"
+                                    android:weightSum="2">
+
+                                    <RadioButton
+                                        android:id="@+id/radiomale"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:checked="true"
+                                        android:text="@string/male"
+                                        android:textSize="@dimen/btn_text_size_15"/>
+
+                                    <RadioButton
+                                        android:id="@+id/radiofemale"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:checked="false"
+                                        android:text="@string/female"
+                                        android:textSize="@dimen/btn_text_size_15"/>
+
+                                </RadioGroup>
+
+                                <EditText
+                                    android:id="@+id/et_mobile"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:enabled="false"
+                                    android:hint="@string/mobile_number"
+                                    android:inputType="number"
+                                    android:maxLength="10"
+                                    android:text="@={ViewModel.mutableMobile}"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="@dimen/btn_text_size_15" />
+
+                                <EditText
+                                    android:id="@+id/tv_email"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:hint="@string/email_id"
+                                    android:inputType="textEmailAddress"
+                                    android:text="@={ViewModel.mutableEmail}"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="@dimen/btn_text_size_15" />
+
+
+                                <EditText
+                                    android:id="@+id/tv_route_id"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:focusable="false"
+                                    android:hint="@string/selecte_route"
+                                    android:inputType="none"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="@dimen/btn_text_size_15" />
+
+                                <EditText
+                                    android:id="@+id/tv_village_id"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:clickable="false"
+                                    android:focusable="false"
+                                    android:hint="@string/select_village"
+                                    android:inputType="none"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="@dimen/btn_text_size_15" />
+
+                                <EditText
+                                    android:id="@+id/tv_area_id"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_40sdp"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:clickable="false"
+                                    android:focusable="false"
+                                    android:hint="@string/select_area"
+                                    android:inputType="none"
+                                    android:textColor="@color/textColor"
+                                    android:textSize="@dimen/btn_text_size_15" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="2"
+                            android:padding="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/tv_done"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/btn_height_40"
+                                android:layout_weight="1"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:background="@drawable/shape_border_button_primary_color_box"
+                                android:elevation="05dp"
+                                android:onClick="@{(v) -> ViewModel.onClickListner(v)}"
+                                android:text="@string/done"
+                                android:textColor="@color/color_white"
+                                android:textSize="@dimen/btn_text_size_15" />
+
+
+                            <Button
+                                android:id="@+id/tv_cancel"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/btn_height_40"
+                                android:layout_weight="1"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:background="@drawable/shape_border_button_primary_color_1"
+                                android:elevation="05dp"
+                                android:text="@string/cancel"
+                                android:textColor="@color/color_red"
+                                android:textSize="@dimen/btn_text_size_15" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+</layout>
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.offer.Fragment_Offer">
+
+    <RelativeLayout
+        android:id="@+id/id_lay_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white">
+
+        <RelativeLayout
+            android:id="@+id/id_lay_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimaryBlue">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/offer"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_head_size_20"
+                android:gravity="center|left"
+                android:paddingLeft="20dp">
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/id_lay_toolbar">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/id_recycle_offers"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_margin="05dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/id_txt_no_data_found"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/no_data_found"
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_head_size_18"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</layout>

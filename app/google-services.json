@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "911606321500",
+    "firebase_url": "https://kadam-travels.firebaseio.com",
+    "project_id": "kadam-travels",
+    "storage_bucket": "kadam-travels.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911606321500:android:516c94c81c1a0e013db199",
+        "android_client_info": {
+          "package_name": "com.shailesh.mybusappdagger2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "911606321500-hbg0kkcrplhvbvl2b47e2qmd5k3529si.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shailesh.mybusappdagger2",
+            "certificate_hash": "77abc65e1bb13b1fa2b37a2571c374abb4ac2325"
+          }
+        },
+        {
+          "client_id": "911606321500-2levnq68aeitj7vafasblht65nas9gqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvpLjsKq6A5YyJNbwS_4gP_Azm3KQNj2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "911606321500-2levnq68aeitj7vafasblht65nas9gqq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

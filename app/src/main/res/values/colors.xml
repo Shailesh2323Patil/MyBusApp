@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0093dd</color>
+    <color name="colorPrimaryDark">#034D71</color>
+    <color name="colorAccent">#0093dd</color>
+
+    <color name="colorPrimaryBlue">#0093dd</color>
+
+    <color name="icon_seat_booked">#666666</color>
+    <color name="icon_seat_reserved">#D8D7D7</color>
+
+    <color name="color_text_color">#414141</color>
+    <color name="color_text_color_black">#333333</color>
+    <color name="color_text_color_primary_green">#497f7f</color>
+    <color name="color_text_color_gray">#666666</color>
+    <color name="color_text_color_gray_light">#828282</color>
+    <color name="color_text_color_gray_light_2">#d2d2d2</color>
+    <color name="color_text_color_orange">#ea7e00</color>
+    <color name="color_text_color_green">#1aab2a</color>
+
+    <color name="shimmer_background">#AFADAD</color>
+    <color name="shimmer_background_2">#AFADAD</color>
+    <color name="shimmer_background_3">#706C6C</color>
+
+    <color name="color_black">#000000</color>
+    <color name="color_blue">#01579B</color>
+    <color name="color_light_blue">#20abd8</color>
+    <color name="color_light_green">#4dbd74</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_red">#e32c00</color>
+    <color name="color_gray">#757575</color>
+    <color name="color_gray_light">#E1E4E4</color>
+    <color name="color_gray_light_toolbar">#f8fafa</color>
+    <color name="color_gray_border">#AFAEAE</color>
+    <color name="color_gray_card_disease">#AFAEAE</color>
+    <color name="color_gray_glide">#E1E1E1</color>
+    <color name="com_facebook_blue">#1877f2</color>
+    <color name="com_facebook_button_background_color"></color>
+    <color name="browser_actions_bg_grey">#DDD8D8</color>
+
+    <color name="color_package_gray">#f3f3f3</color>
+    <color name="textColor">#333333</color>
+    <color name="tabBarDivider">#CECECE</color>
+
+    <array name="array_dot_active">
+        <item>@color/color_black</item>
+        <item>@color/color_black</item>
+        <item>@color/color_black</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/color_gray_light</item>
+        <item>@color/color_gray_light</item>
+        <item>@color/color_gray_light</item>
+    </array>
+</resources>

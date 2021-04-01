@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/id_lay_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimaryBlue">
+
+                <TextView
+                    android:id="@+id/id_txt_title"
+                    android:layout_above="@+id/id_line_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/text_head_size_20"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="@color/color_white">
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/id_line_gray"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:orientation="horizontal"
+                    android:background="@color/color_gray"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/id_lay_2"
+                android:layout_below="@+id/id_lay_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/id_txt_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/app_name"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_message_size_17"></TextView>
+
+                <RelativeLayout
+                    android:layout_below="@+id/id_txt_message"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/id_btn_no"
+                        android:layout_toLeftOf="@+id/id_btn_yes"
+                        android:layout_width="@dimen/btn_dialog_width"
+                        android:layout_height="@dimen/btn_dialog_height"
+                        android:background="@drawable/shape_border_button_primary_color_1"
+                        android:text="@string/no"
+                        android:layout_marginRight="02dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/btn_text_size_btn_continue"/>
+
+                    <Button
+                        android:id="@+id/id_btn_yes"
+                        android:layout_width="@dimen/btn_dialog_width"
+                        android:layout_height="@dimen/btn_dialog_height"
+                        android:background="@drawable/shape_border_button_primary_color_1"
+                        android:text="@string/yes"
+                        android:textSize="@dimen/btn_text_size_btn_continue"
+                        android:layout_marginLeft="02dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/textColor" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

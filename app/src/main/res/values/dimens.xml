@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="img_logo_2_height_60">60dp</dimen>
+    <dimen name="img_logo_2_height_80">80dp</dimen>
+
+    <dimen name="bottom_img_height">130dp</dimen>
+
+    <dimen name="small_icon_height">25dp</dimen>
+    <dimen name="small_icon_width">25dp</dimen>
+
+    <dimen name="small_icon_18">18dp</dimen>
+    <dimen name="small_icon_20">20dp</dimen>
+    <dimen name="small_icon_25">25dp</dimen>
+    <dimen name="small_icon_30">30dp</dimen>
+
+    <dimen name="progress_bar_25">25dp</dimen>
+    <dimen name="progress_bar_35">35dp</dimen>
+    <dimen name="progress_bar_45">45dp</dimen>
+    <dimen name="progress_bar_55">55dp</dimen>
+
+    <dimen name="btn_height">50dp</dimen>
+    <dimen name="btn_width">140dp</dimen>
+
+    <dimen name="btn_dialog_height">35dp</dimen>
+    <dimen name="btn_dialog_width">90dp</dimen>
+
+    <dimen name="btn_height_40">40dp</dimen>
+    <dimen name="btn_height_45">45dp</dimen>
+    <dimen name="btn_width_200">200dp</dimen>
+
+    <dimen name="edittext_border_height">40dp</dimen>
+
+    <dimen name="progress_bar_height">60dp</dimen>
+    <dimen name="progress_bar_width">60dp</dimen>
+
+    <dimen name="floating_button_height">80dp</dimen>
+    <dimen name="floating_button_width">80dp</dimen>
+    <dimen name="shape_top_corner_height">100dp</dimen>
+
+    <dimen name="slider_img_height_180">180dp</dimen>
+    <dimen name="slider_img_height_200">200dp</dimen>
+    <dimen name="slider_img_height_220">220dp</dimen>
+    <dimen name="slider_img_height_250">250dp</dimen>
+    <dimen name="slider_img_height_260">260dp</dimen>
+    <dimen name="slider_img_height_270">270dp</dimen>
+    <dimen name="slider_img_height_280">280dp</dimen>
+    <dimen name="slider_img_height_300">300dp</dimen>
+    <dimen name="slider_img_height_320">320dp</dimen>
+
+    <dimen name="slider_height_160">160dp</dimen>
+    <dimen name="slider_height_162">162dp</dimen>
+    <dimen name="slider_height_165">165dp</dimen>
+    <dimen name="slider_height_170">170dp</dimen>
+    <dimen name="slider_height_173">173dp</dimen>
+    <dimen name="slider_height_175">175dp</dimen>
+    <dimen name="slider_height_178">178dp</dimen>
+    <dimen name="slider_height_180">180dp</dimen>
+    <dimen name="slider_height_182">182dp</dimen>
+    <dimen name="slider_height_185">185dp</dimen>
+    <dimen name="slider_height_190">190dp</dimen>
+    <dimen name="slider_height_195">195dp</dimen>
+    <dimen name="slider_height_200">200dp</dimen>
+    <dimen name="slider_height_270">270dp</dimen>
+    <dimen name="slider_height_330">330dp</dimen>
+    <dimen name="slider_height_350">350dp</dimen>
+
+    <dimen name="no_data_found_height">450dp</dimen>
+
+    <dimen name="round_corner_05">05dp</dimen>
+    <dimen name="round_corner_15">15dp</dimen>
+    <dimen name="round_corner_10">10dp</dimen>
+    <dimen name="round_corner_20">20dp</dimen>
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">200dp</dimen>
+
+    <dimen name="height_layout_skip_box">130dp</dimen>
+
+
+    <!-- Font Size -->
+
+    <dimen name="text_head_size_30">30sp</dimen>
+    <dimen name="text_head_size_25">25sp</dimen>
+    <dimen name="text_head_size_22">22sp</dimen>
+    <dimen name="text_head_size_20">20sp</dimen>
+    <dimen name="text_head_size_18">18sp</dimen>
+
+    <dimen name="text_message_size_18">18sp</dimen>
+    <dimen name="text_message_size_17">17sp</dimen>
+    <dimen name="text_message_size_16">16sp</dimen>
+    <dimen name="text_message_size_15">15sp</dimen>
+    <dimen name="text_message_size_14">14sp</dimen>
+    <dimen name="text_message_size_13">13sp</dimen>
+
+    <dimen name="text_note_size_8">8sp</dimen>
+    <dimen name="text_note_size_10">10sp</dimen>
+    <dimen name="text_note_size_11">11sp</dimen>
+    <dimen name="text_note_size_12">12sp</dimen>
+    <dimen name="text_note_size_13">13sp</dimen>
+    <dimen name="text_note_size_14">14sp</dimen>
+
+    <dimen name="btn_text_size_20">20sp</dimen>
+    <dimen name="btn_text_size_18">18sp</dimen>
+    <dimen name="btn_text_size_15">15sp</dimen>
+    <dimen name="btn_text_size_13">13sp</dimen>
+
+    <dimen name="btn_text_size_btn_continue">15sp</dimen>
+
+</resources>

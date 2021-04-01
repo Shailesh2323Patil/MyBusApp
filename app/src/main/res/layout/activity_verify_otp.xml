@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="ViewModel"
+            type="com.shailesh.mybusappdagger2.ui.verify_otp.VerifyOtp_ViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        tools:context=".ui.login.Activity_Login">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/id_lay_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:id="@+id/id_lay_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/id_logo"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_100sdp"
+                            android:src="@drawable/logo" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/id_lay_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_lay_1"
+                    android:layout_marginTop="@dimen/_20sdp">
+
+                    <TextView
+                        android:id="@+id/id_txt_sign"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/otp_verification"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/text_head_size_18"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/id_lay_edit_otp"
+                        android:layout_below="@+id/id_txt_sign"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/id_lay_edit_user_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/etOtpVerify"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left|center"
+                                android:text="@={ViewModel.mutableOtp}"
+                                android:hint="@string/enter_your_otp_code"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:textSize="@dimen/text_message_size_17" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <TextView
+                            android:id="@+id/id_txt_resend_otp_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/resend_otp_message"
+                            android:textColor="@color/color_text_color_gray"
+                            android:textSize="@dimen/text_note_size_12"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentRight="true" />
+
+                    </RelativeLayout>
+
+
+                    <Button
+                        android:id="@+id/btnOtpSubmit"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/id_lay_edit_otp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/shape_border_button_primary_color_box"
+                        android:elevation="05dp"
+                        android:text="@string/confirm"
+                        android:onClick="@{(v) -> ViewModel.clickContinue(v)}"
+                        android:textColor="@color/color_white"
+                        android:textSize="@dimen/btn_text_size_20" />
+
+                    <Button
+                        android:id="@+id/id_btn_resend_otp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/btnOtpSubmit"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/shape_border_button_white_box"
+                        android:text="@string/resendotp"
+                        android:textColor="@color/color_blue"
+                        android:textSize="@dimen/btn_text_size_18"></Button>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
